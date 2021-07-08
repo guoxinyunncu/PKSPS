@@ -16,16 +16,16 @@ pip install networkx
 pip install random
 ```
 # Running PKSPS
-Open cmd in windows or terminal in Linux, then download all the data and code in PKSPS-master to the local address, cd to where the code and data are stored and run:
+Open cmd in windows or terminal in Linux, then download all the data and code in PKSPS-master to the local address, cd to where the code and data are stored and run:<br>
 `
 python predict.py
 `
 ## Example:
 `
-python predict.py 
-Please enter the substrate protein for inquiry:’TP53’
-Please enter a sequence of queries:’ PSVEPPLsQETFSDL’
-Please select a threshold for the output:0.01
+python predict.py <br><br>
+Please enter the substrate protein for inquiry:’TP53’<br>
+Please enter a sequence of queries:’ PSVEPPLsQETFSDL’<br>
+Please select a threshold for the output:0.01<br>
 `
 Prediction results will show in the cmd or terminal
 
