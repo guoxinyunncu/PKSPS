@@ -21,16 +21,17 @@ Open cmd in windows or terminal in Linux, then download all the data and code in
 python predict.py
 `
 ## Example:
-`
-python predict.py <br><br>
-Please enter the substrate protein for inquiry:’TP53’<br>
-Please enter a sequence of queries:’ PSVEPPLsQETFSDL’<br>
-Please select a threshold for the output:0.01<br>
-`
+```
+python predict.py 
+Please enter the substrate protein for inquiry:’TP53’
+Please enter a sequence of queries:’ PSVEPPLsQETFSDL’
+Please select a threshold for the output:0.01
+```
 Prediction results will show in the cmd or terminal
 
 # Announcements
 * Make sure the data and code are in one folder, or enter the exact data address when you run the code;<br>
 * If an error occurs with the CMD runtime, consider running predict.py using the Python editor;<br>
 * If you want to predict the catalytic kinase for the phosphorylation site, you need to provide the protein name of the substrate `Gene name`, and the sequence of amino acids around it `~-7~Site~+7~`;<br>
-* The setting of the threshold can be selected by the user. We recommend that the user choose between the high threshold `0.01` and the low threshold `0.02`. User can also try the value between the two thresholds as needed.
+* The setting of the threshold can be selected by the user. We recommend that the user choose between the high threshold `0.01` and the low threshold `0.02`. User can also try the value between the two thresholds as needed;<br>
+* The accepted amino acids are: A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y, and a virtual amino acid O. If the protein fragments contain other amino acids, the program only will predict fragments which contain above-mentioned 21 amino acids.
