@@ -9,3 +9,9 @@ networkx>=2.5
 # InstInstall 
 python 3.6 in Linux and Windows.<br>
 Since the program is written in python 3.6, python 3.6 with pip tool must be installed first.PKSPS uses the following dependencies: numpy, pandas, networkx, and random. You can install these packages first, by the following commands:<br>
+```python
+pip install numpy
+pip install pandas
+pip install networkx
+pip install random
+```
