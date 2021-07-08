@@ -20,3 +20,11 @@ Open cmd in windows or terminal in Linux, then download all the data and code in
 ```
 python predict.py
 ```
+## Example:
+```
+python predict.py 
+Please enter the substrate protein for inquiry:’TP53’
+Please enter a sequence of queries:’ PSVEPPLsQETFSDL’
+Please select a threshold for the output:0.01
+```
+Prediction results will show in the cmd or terminal
