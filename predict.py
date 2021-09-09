@@ -23,14 +23,19 @@ def main():
     kweight = Data_read.simmat_read('kweight.csv')
     score_matrix = Data_read.read_score_matrix('blosum62.xlsx')
     
+    
     S= np.zeros(shape=(len(kinname_list),len(subname_list)))#连接矩阵
+    subname_list = [line.upper() for line in subname_list]
+    kinname_list = [line.upper() for line in kinname_list]
     for line in data:
-        if line[1] in kinname_list:
-            line[1] = line[1]+'S'
-        i = kinname_list.index(line[2])
-        j = subname_list.index(line[1])
+        x = line[1].upper()
+        y = line[2].upper()   
+        if x in kinname_list:
+            x = x+'S'   
+        i = kinname_list.index(y)
+        j = subname_list.index(x)
         S[i][j] = S[i][j]+1
-    S=PKSPS.symmetric_normalization(kinname_list,subname_list,S)
+     S=PKSPS.symmetric_normalization(kinname_list,subname_list,S)
     
     G1,A = PKSPS.requry_graph(S,substrate,subname_list,kinname_list,sweight,kweight)
     P_net10, sort10 = PKSPS.PKSPS_NET(substrate,A,subname_list,kinname_list,G1,sweight,kweight)
