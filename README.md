@@ -24,7 +24,7 @@ python predict.py
 ```
 python predict.py 
 Please enter the substrate protein for inquiry:’TP53’
-Please enter a sequence of queries:’ PSVEPPLsQETFSDL’
+Please enter a sequence of queries:’ QSDPSVEPPLSQETFSDLWKL’
 Please select a threshold for the output:0.01
 ```
 Prediction results will show in the cmd or terminal
