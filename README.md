@@ -32,6 +32,7 @@ Prediction results will show in the cmd or terminal
 # Announcements
 * Make sure the data and code are in one folder, or enter the exact data address when you run the code;<br>
 * If an error occurs with the CMD runtime, consider running predict.py using the Python editor;<br>
-* If you want to predict the catalytic kinase for the phosphorylation site, you need to provide the protein name of the substrate `Gene name`, and the sequence of amino acids around it `~-7~Site~+7~`;<br>
+* If you want to predict the catalytic kinase for the phosphorylation site, you need to provide the protein name of the substrate `Gene name`, and the sequence of amino acids around it `~-10~Site~+10~`;<br>
 * The setting of the threshold can be selected by the user. We recommend that the user choose between the high threshold `0.01` and the low threshold `0.02`. User can also try the value between the two thresholds as needed;<br>
 * The accepted amino acids are: A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y, and a virtual amino acid O. If the protein fragments contain other amino acids, the program only will predict fragments which contain above-mentioned 21 amino acids.
+* As the website data file upload/download is often unstable, we have given the cloud disk address and password to download the updated data：https://pan.baidu.com/s/1o9ekINLNLPzjF2O9HhFFUQ password：sdfk
